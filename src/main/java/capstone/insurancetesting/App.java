@@ -20,7 +20,7 @@ public class App
     {
     System.out.println("Script Started");	
        //initializing the web driver
-    System.setProperty("webdriver.chrome.driver", "C:\\Users\\dell\\Downloads\\chromedriver-win64\\chromedriver-win64\\chromedriver.exe");
+    //System.setProperty("webdriver.chrome.driver", "C:\\Users\\dell\\Downloads\\chromedriver-win64\\chromedriver-win64\\chromedriver.exe");
     //setting properties
     ChromeOptions chromeOptions = new ChromeOptions();
 	chromeOptions.addArguments("--headless");
@@ -51,7 +51,7 @@ public class App
     TakesScreenshot scrShot = ((TakesScreenshot)driver);
     File srcFile = scrShot.getScreenshotAs(OutputType.FILE);
     //File destFile = new File("C:\\Users\\dell\\Documents\\test\\test-ss.jpg");
-    File destFile = new File("C:\\Users\\dell\\Documents\\test\\test-ss.jpg");
+    File destFile = new File("/home/ubuntu/test-ss.jpg");
     FileUtils.copyFile(srcFile, destFile);
     Thread.sleep(1000);
     System.out.println("ScreenShot Taken");
