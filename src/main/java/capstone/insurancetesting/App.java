@@ -23,13 +23,13 @@ public class App
     System.setProperty("webdriver.chrome.driver", "C:\\Users\\dell\\Downloads\\chromedriver-win64\\chromedriver-win64\\chromedriver.exe");
     //setting properties
     ChromeOptions chromeOptions = new ChromeOptions();
-	//chromeOptions.addArguments("--headless");
+	chromeOptions.addArguments("--headless");
 	//chromeOptions.addArguments("--disable-gpu");
 	//chromeOptions.addArguments("--no-sandbox");
     //open url
     System.out.println("Driver opening up the url in browser");	
     WebDriver driver = new ChromeDriver(chromeOptions);
-    driver.get("http://localhost:8081/contact.html");	
+    driver.get("http://54.196.165.5:8081//contact.html");	
     //invole implicit waits to load the page
     driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
     System.out.println("Enter details in the form");
@@ -50,6 +50,7 @@ public class App
     System.out.println("test scripts are executed");
     TakesScreenshot scrShot = ((TakesScreenshot)driver);
     File srcFile = scrShot.getScreenshotAs(OutputType.FILE);
+    //File destFile = new File("C:\\Users\\dell\\Documents\\test\\test-ss.jpg");
     File destFile = new File("C:\\Users\\dell\\Documents\\test\\test-ss.jpg");
     FileUtils.copyFile(srcFile, destFile);
     Thread.sleep(1000);

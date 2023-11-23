@@ -2,12 +2,12 @@
 <testng-results total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-11-23T18:53:47Z" name="Surefire suite" finished-at="2023-11-23T18:53:47Z" duration-ms="80">
+  <suite started-at="2023-11-23T21:14:16Z" name="Surefire suite" finished-at="2023-11-23T21:14:16Z" duration-ms="73">
     <groups>
     </groups>
-    <test started-at="2023-11-23T18:53:47Z" name="Surefire test" finished-at="2023-11-23T18:53:47Z" duration-ms="80">
+    <test started-at="2023-11-23T21:14:16Z" name="Surefire test" finished-at="2023-11-23T21:14:16Z" duration-ms="73">
       <class name="capstone.insurancetesting.AppTest">
-        <test-method signature="shouldAnswerWithTrue()[pri:0, instance:shouldAnswerWithTrue(capstone.insurancetesting.AppTest)]" started-at="2023-11-23T10:53:47Z" name="shouldAnswerWithTrue" finished-at="2023-11-23T10:53:47Z" duration-ms="5" status="PASS">
+        <test-method signature="shouldAnswerWithTrue()[pri:0, instance:shouldAnswerWithTrue(capstone.insurancetesting.AppTest)]" started-at="2023-11-23T13:14:16Z" name="shouldAnswerWithTrue" finished-at="2023-11-23T13:14:16Z" duration-ms="4" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- shouldAnswerWithTrue -->
