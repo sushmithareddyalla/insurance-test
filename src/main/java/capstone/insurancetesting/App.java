@@ -51,7 +51,7 @@ public class App
     TakesScreenshot scrShot = ((TakesScreenshot)driver);
     File srcFile = scrShot.getScreenshotAs(OutputType.FILE);
     //File destFile = new File("C:\\Users\\dell\\Documents\\test\\test-ss.jpg");
-    File destFile = new File("/home/ubuntu/test-ss.jpg");
+    File destFile = new File("/var/lib/jenkins/workspace/insurance_project_tests/test-ss.jpg");
     FileUtils.copyFile(srcFile, destFile);
     Thread.sleep(1000);
     System.out.println("ScreenShot Taken");
